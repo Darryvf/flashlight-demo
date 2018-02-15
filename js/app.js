@@ -6,14 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
   function toggleLight(event){
     console.log("toggle class coming soon", event.target)
 
-    if (flashlight.className.match(/off/)) {
-      flashlight.classList.remove('off')
-      flashlight.classList.add('on')
+    if (flashlight.classList.contains('off')) {
+      flashlight.classList.replace('off', 'on')
       console.log('turning on')
     }
     else {
-      flashlight.classList.remove('on')
-      flashlight.classList.add('off')
+      flashlight.classList.replace('on', 'off')
       console.log('turning off')
     }
   }
