@@ -1,0 +1,16 @@
+body { background-color: #ccc }
+
+.on { background-color: #fff }
+.off { background-color: #000 }
+
+#flashlight {
+  width: 100px;
+  height: 500px;
+}
+
+.round { border-radius: 10px }
+
+body {
+  display: flex;
+  align-items: center;
+}
